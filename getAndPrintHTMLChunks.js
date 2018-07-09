@@ -13,7 +13,7 @@ var getAndPrintHTMLChunks = function () {
 
   response.on('data', function (data) {
     console.log('Chunk Received. Length:', data.length);
-    console.log('\n', data)
+    console.log(data);
   });
   response.on('end', function() {
     console.log('Response stream complete.');
